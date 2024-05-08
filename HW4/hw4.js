@@ -20,15 +20,15 @@ console.log(squareCylinder(5,7))
 
 // зробив два варіанти, коли передеється масив в аргументі,
 // і коли передається просто безліч аргуменів
-function array1 (a){
-    for(i=0; i<=a.length-1; i++){
-        console.log(a[i])
+function array1 (arg){
+    for(i=0; i<arg.length; i++){
+        console.log(arg[i])
     }
 }
 array1([4,'abx',254])
-function array2 (...a){
-    for(i=0; i<=a.length-1; i++){
-        console.log(a[i])
+function array2 (...arg){
+    for(i=0; i<arg.length; i++){
+        console.log(arg[i])
     }
 }
 array2(4,'abx',254)
